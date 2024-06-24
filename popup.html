@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Extensão</title>
+  <style>
+    body {
+      width: 300px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      width: 100px;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .labelTitle{
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <h2>Minha Extensão</h2>
+  <label for="rn1" class="labelTitle">GiScanner</label><br>
+  <input name="rn1" type="text" id="numeroAleatorioGS" readonly>
+  <button id="btnGerarGS">Gerar Numeros GS</button>
+
+  <label for="rn2" class="labelTitle">EXHScanner</label><br>
+  <input name="rn2" type="text" id="numeroAleatorioEXH" readonly>
+  <button id="btnGerarEXH">Gerar Numeros EX</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

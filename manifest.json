@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Random",
+  "description": "Exibe uma caixa com a mensagem 'Olá, mundo!' ao clicar em um botão.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],  
+      "js": ["content.js"]
+    }
+  ]
+}
