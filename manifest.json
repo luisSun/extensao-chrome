@@ -1,10 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Random",
-  "description": "Exibe uma caixa com a mensagem 'Olá, mundo!' ao clicar em um botão.",
+  "name": "Minha Extensão",
+  "description": "Exibe números aleatórios e mantém histórico persistente.",
   "version": "1.0",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "browser_action": {
     "default_popup": "popup.html",
@@ -15,7 +16,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],  
+      "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ]

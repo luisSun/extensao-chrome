@@ -19,20 +19,28 @@
       margin-top: 10px;
     }
 
-    .labelTitle{
+    .labelTitle {
       font-weight: bolder;
+    }
+
+    .historico {
+      margin-top: 10px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h2>Minha Extensão</h2>
+  <h2>Minha Extensao</h2>
+  
   <label for="rn1" class="labelTitle">GiScanner</label><br>
   <input name="rn1" type="text" id="numeroAleatorioGS" readonly>
   <button id="btnGerarGS">Gerar Numeros GS</button>
+  <div id="historicoGS" class="historico"></div>
 
   <label for="rn2" class="labelTitle">EXHScanner</label><br>
   <input name="rn2" type="text" id="numeroAleatorioEXH" readonly>
   <button id="btnGerarEXH">Gerar Numeros EX</button>
+  <div id="historicoEXH" class="historico"></div>
 
   <script src="popup.js"></script>
 </body>
